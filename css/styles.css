@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --black: #1e1e1e;
+    --white: #ffffff;
+    --yellow: #fab700;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    color: var(--black);
+}
+
+body {
+    /* background-color:aquamarine; */
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    padding: 0 70px 0px 70px;
+    margin-bottom: 50px;
+}
+
+section {
+    padding-top: 70px;
+}Flist
+
+.wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+.poppinsFontMedium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppinsFontRegular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    /* background-color: blueviolet; */
+    /* border-bottom: solid 2px #565555; */
+    /* width: 100%; */
+    box-shadow: 0px 1px 10px #999;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+}
+
+#navLogo, #navActions {
+    width: 15%;
+}
+
+#navLinks{
+    width: 70%;
+}
+
+#navLinks ul {
+    width: 100%;
+}
+
+#navLinks ul li a:hover {
+    text-decoration: underline;
+    color: var(--yellow);
+}
+
+#navLogo img{
+    max-height: 50px;
+}
+
+#navActions img{
+    height: 1.5em;
+    object-fit: cover;
+}
+
+.inlineLinks ul{
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    padding: 0;
+}
+
+.inlineLinks li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.headingText {
+    font-size: 2em;
+}
+
+.highlightText {
+    color: var(--yellow);
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal
+}
+
+.underlineText {
+    text-decoration: underline;
+}
+
+.centered {
+    text-align: center;
+}
+
+#hero {
+    padding-top: 80px;
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: row;
+}
+
+.heroContent .heroText {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 55%;
+}
+
+.heroContent .heroImage {
+    width: 45%;
+}
+
+.heroImage img{
+    max-width: 100%;
+}
+
+#heroAbout {
+    padding-top: 70px;
+    flex-direction: row-reverse;
+}
+
+.heroAction a {
+    font-weight: 500;
+    color: var(--white);
+    padding: 10px;
+    background-color: var(--yellow);
+    text-decoration: none;
+}
+
+.heroAction a::after {
+    content: ">";
+    padding-left: 5px;
+}
+
+.listing {
+    display: grid;
+    grid-gap: 20px;
+}
+
+#gallery .listing {
+    grid-template-columns: repeat(3,1fr);
+}
+
+#gallery img {
+    max-width: 100%;
+}
+
+#menu .listing, #reviews .listing {
+    grid-template-columns: repeat(4,1fr);
+}
+
+#menu .listing * {
+    padding: 5px;
+}
+
+#menu .listImage {
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.listRating span i{
+    color: var(--yellow);
+}
+
+#menu .listPrice {
+    font-weight: 600;
+}
+
+#menu .listAction {
+    margin: 20px 0 20px 0;
+}
+
+#menu .listAction a {
+    background-color: var(--black);
+    padding: 10px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+#menu .listName h4{
+    color: var(--yellow);
+}
+
+#menu .listing .listItem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 1px -4px 10px 3px rgba(153, 152, 152, 0.34);
+    border-radius: 5px;
+}
+
+/* #menu .listItem {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+    border: solid 1px #999;
+} */
+
+#reviews .listImage img{
+    max-width: 50%;
+    border-radius: 50%;
+}
+
+#reviews .listRating span{
+    max-width: 45%;
+}
+
+#reviews .listing * {
+    margin: 10px;
+}
+
+#reviews .listing .listItem {
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 1px -4px 10px 3px rgba(153, 152, 152, 0.34);
+    border-radius: 5px;
+}
+
+/* #reviews .listImage {
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+} */
+
+footer {
+    padding: 50px;
+}
+
+
